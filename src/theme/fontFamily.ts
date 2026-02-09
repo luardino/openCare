@@ -1,5 +1,5 @@
 export const fontFamily = {
-    regular: 'Inter-400Regular',
-    medium: 'Inter-500Medium',
-    bold: 'Inter-700Bold',
+    regular: "Poppins_400Regular",
+    medium: "Poppins_500Medium",
+    bold: "Poppins_700Bold",
 };

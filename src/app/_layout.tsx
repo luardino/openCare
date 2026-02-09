@@ -3,10 +3,12 @@ import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { Home2, Profile, Calendar2, Message } from "iconsax-react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { colors } from "@/theme/colors";
-import { Inter_400Regular, 
-    Inter_500Medium, 
-    Inter_700Bold, 
-    useFonts } from "@expo-google-fonts/inter";
+import {
+    Poppins_400Regular,
+    Poppins_500Medium,
+    Poppins_700Bold,
+    useFonts,
+} from "@expo-google-fonts/poppins";
 import { Loading } from "@/components/Loading";
 
 type TabRouteName = "index" | "schedule/index" | "chat/index" | "profile/index";
@@ -88,9 +90,9 @@ const TAB_META: Record<
 
 export default function Layout() {
     const [fontsLoaded] = useFonts({
-        Inter_400Regular,
-        Inter_500Medium,
-        Inter_700Bold,
+        Poppins_400Regular,
+        Poppins_500Medium,
+        Poppins_700Bold,
     });
 
     if (!fontsLoaded) {
@@ -140,7 +142,7 @@ const styles = StyleSheet.create({
     tabLabel: {
         marginLeft: 8,
         fontSize: 12,
-        fontFamily: "Inter_700Bold",
+        fontFamily: "Poppins_700Bold",
         flexShrink: 1,
     },
 });
