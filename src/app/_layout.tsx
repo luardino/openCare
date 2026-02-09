@@ -1,11 +1,20 @@
-import { NativeTabs } from 'expo-router/unstable-native-tabs'
+import { Tabs } from "expo-router";
 
 export default function Layout() {
     return (
-        <NativeTabs>
-            <NativeTabs />
-            <NativeTabs />
-            <NativeTabs />
-        </NativeTabs>
+        <Tabs screenOptions={{ headerShown: false }}>
+            <Tabs.Screen
+                name="index"
+                options={{ title: "Home" }}
+            />
+            <Tabs.Screen
+                name="schedule"
+                options={{ title: "Schedule" }}
+            />
+            <Tabs.Screen
+                name="profile"
+                options={{ title: "Profile" }}
+            />
+        </Tabs>
     );
 }

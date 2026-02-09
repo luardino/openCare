@@ -1,9 +1,9 @@
 import { Text, View } from "react-native";
 
-export default function Chat() {
+export default function Schedule() {
     return (
         <View>
-            <Text>Chat Page</Text>
+            <Text>Schedule Page</Text>
         </View>
     );
 }
