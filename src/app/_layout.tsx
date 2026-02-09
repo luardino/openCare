@@ -3,7 +3,10 @@ import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { Home2, Profile, Calendar2, Message } from "iconsax-react-native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { colors } from "@/theme/colors";
-import { Inter_400Regular, Inter_500Medium, Inter_700Bold, useFonts } from "@expo-google-fonts/inter";
+import { Inter_400Regular, 
+    Inter_500Medium, 
+    Inter_700Bold, 
+    useFonts } from "@expo-google-fonts/inter";
 import { Loading } from "@/components/Loading";
 
 type TabRouteName = "index" | "schedule/index" | "chat/index" | "profile/index";
